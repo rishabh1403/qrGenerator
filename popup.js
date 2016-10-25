@@ -11,4 +11,5 @@ chrome.tabs.query(tabQuery,function(tabs){
       height: 300
     });
     qrcode.makeCode(url);
+    
 });
