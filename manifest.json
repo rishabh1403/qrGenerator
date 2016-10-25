@@ -1,0 +1,25 @@
+{
+    "manifest_version" : 2,
+    "name" : "QR Solution",
+    "description" : "Generate QR Code for any text, Image or Link on any webpage",
+    "version" : "0.1.0",
+    "icons":{
+        "16" : "q16.png",
+        "32" : "q32.png",
+        "48" : "q64.png",
+        "128":"q128.png"
+    },
+    "browser_action":{
+        "default_title" : "QR Generator",
+        "default_icon" : "q16.png",
+        "default_popup" : "popup.html"
+    },
+    "background" : {
+        "scripts":["background.js"],
+        "persistent" : false
+    },
+    "permissions" : [
+        "contextMenus",
+        "tabs"
+    ]
+}
